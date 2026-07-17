@@ -90,7 +90,7 @@ Upon confirming the data protection declaration, the Haplofun workflow begins. T
 Besides your own data, you can use bundled public datasets for functional annotation.
 
 > [!TIP]
-> Want to try Haplofun without preparing your own files? Load the bundled **1000G (IL23R locus, hg38)** VCF together with the **GWAS catalog**, **eQTL**, and **cCRE** annotations to test the full workflow.
+> Want to try Haplofun without preparing your own files? Load the bundled **1000G (IL23R locus, hg38)** VCF together with the **GWAS catalog**, **eQTL**, and **cCRE** annotation to test the full workflow.
 
 **Pre-stored VCF files**
 
@@ -102,7 +102,7 @@ Besides your own data, you can use bundled public datasets for functional annota
 - **GWAS catalog (hg38)**: Pre-processed human GWAS data from the GWAS catalog, used for risk allele mapping.
 - **eQTL data (hg38)**: Pre-processed human expression QTL data (GTEx v10 SuSiE eQTL, hg38, PIP > 0.5).
 - **cCREs annotation (ENCODE)**: Candidate cis-regulatory elements from the UCSC Genome Browser (ENCODE).
-- **H. influenzae (ftsI locus)**: GWAS data for antimicrobial resistance (Diricks, M., Petersen, S., Bartels, L. et al., *Genome Med* 2024).
+- **H. influenzae (ftsI locus)**: Microbial GWAS data for antimicrobial resistance (Diricks, M., Petersen, S., Bartels, L. et al., *Genome Med* 2024).
 
 ### 1.4 Pre-analysis data inspection
 
@@ -143,21 +143,21 @@ A continuously updated overview reflecting the current filtered data state:
 
 ### 2.4 Advanced filtering options
 
-- **Linkage disequilibrium (LD) pruning**: Subsets the data based on LD, calculated across the variants in your dataset. Multiallelic variants are excluded (LD = 0). For variant pairs above the r² threshold, the first variant of the pair is retained.
-- **Random SNP sub-sampling**: Randomly selects a specified number of variants from the current filtered dataset, used to assess the robustness and variability of the inferred haplotype network. Comparing networks from multiple random SNP subsets shows how stable the genetic relationships are for the predefined variant set.
+- **Linkage disequilibrium (LD) pruning**: Subsets the data based on LD, calculated across the variants in your dataset. Multiallelic variants cannot be processed reliably. For variant pairs above the r² threshold, the first variant of the pair is retained.
+- **Random SNP sub-sampling**: Randomly selects a specified number of variants from the current filtered dataset, used to assess the robustness and variability of the inferred haplogrouptype network. Comparing networks from multiple random SNP subsets shows how stable the genetic relationships are for the predefined variant set.
 
 ### 2.5 Haplotype visualizations
 
-Six interactive plots derived from the VCF input, for structural analysis of the haplotypes. All plots are dynamically linked to the "Number of top haplotypes" control in the sidebar, which presents plot-specific configuration options contextually. All plots can be downloaded as PDF files.
+Six interactive plots derived from the VCF input, for structural analysis of the haplogroups. All plots are dynamically linked to the "Number of top haplogroups" control in the sidebar. The plots can be downloaded as PDF files.
 
 | Plot | Description |
 |---|---|
-| **a. Frequencies** (bar plot) | Frequencies of samples per haplogroup. |
-| **b. Distance matrix** (heatmap) | Hamming distance matrix for the selected haplogroups, with optional clustering (`ward.D`, `single`, `complete`, `average`, `mcquitty`, `median`, `centroid`). |
-| **c. Network** | Network plot for the selected haplogroups. Four model methods: Haplonet, Minimum Spanning Network (MSN), Randomized Minimum Spanning Tree (RMST), and Minimum Spanning Tree (MST), plus fast-plotting options for larger datasets. Includes allele/haplogroup coloring, frequency-scaled nodes, adjustable plot size/scale/labels/color, an edge-count threshold, and edge weight display as lines, dots, or numbers. |
-| **d. PCA** | Principal component analysis (PC1 vs. PC2) for the selected haplogroups; dot size scaled to haplogroup sample frequency. |
-| **e. Dendrogram** | Hierarchical clustering of the selected haplotypes, with the same agglomeration methods as the distance matrix. |
-| **f. Allele heatmap** | Visual alignment of the alleles per haplogroup, depicted by color. |
+| **Frequencies** (bar plot) | Frequencies of samples per haplogroup. |
+| **Distance matrix** (heatmap) | Hamming distance matrix for the selected haplogroups, with optional clustering (`ward.D`, `single`, `complete`, `average`, `mcquitty`, `median`, `centroid`). |
+| **Network** | Network plot for the selected haplogroups. Four model methods: Haplonet, Minimum Spanning Network (MSN), Randomized Minimum Spanning Tree (RMST), and Minimum Spanning Tree (MST), plus fast-plotting options for larger datasets. Includes allele/haplogroup coloring, frequency-scaled nodes, adjustable plot size/scale/labels/color, an edge-count threshold, and edge weight display as lines, dots, or numbers. |
+| **PCA** | Principal component analysis (PC1 vs. PC2) for the selected haplogroups; dot size scaled to haplogroup sample frequency. |
+| **Dendrogram** | Hierarchical clustering of the selected haplogroup, with the same agglomeration methods as the distance matrix. |
+| **Allele heatmap** | Visual alignment of the alleles per haplogroup, depicted by color. |
 
 ## 3. Functional annotation
 
