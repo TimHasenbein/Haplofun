@@ -2,9 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/TimHasenbein/PegasShiny/main/data/haplofun_logo_2.png" alt="Haplofun logo" height="140"/>
 
-# Haplofun
-
-**Interactive haplotype analysis with integrated functional annotation**
+**Haplofun: Interactive haplotype analysis with integrated functional annotation**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-007bff.svg)](https://choosealicense.com/licenses/mit/)
 ![Version](https://img.shields.io/badge/version-v1.0.0-007bff)
