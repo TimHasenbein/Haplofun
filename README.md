@@ -23,11 +23,7 @@ A robust tool for the generation, visualization, and annotation of genetic haplo
 No installation needed: the public server is live at **[datascience-fzb.shinyapps.io/haplofun](https://datascience-fzb.shinyapps.io/haplofun/)**.
 
 > [!NOTE]
-> The public server enforces a 500 Kb VCF file size limit (< 1,000 variants and < 1,000 samples recommended). For larger data, see [Installation](#installation) to run Haplofun locally.
-
-> [!NOTE]
-> The initial page load can take a little while, as the server spins up and loads all required packages (including several Bioconductor dependencies). Subsequent interactions within the same session are fast.
-
+> The public server enforces a 500 Kb VCF file size limit (< 1,000 variants and < 1,000 samples recommended). Please note that the initial page load may take a while, as the server spins up and loads all required packages and dependencies. 
 ---
 
 ## Contents
