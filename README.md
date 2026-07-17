@@ -10,25 +10,24 @@
 ![R](https://img.shields.io/badge/R-4.5.1-2c3e50?logo=r)
 ![Shiny](https://img.shields.io/badge/built%20with-Shiny-2c3e50?logo=rstudio)
 
-`VCF` · `haplotypes` · `GWAS` · `QTL` · `functional annotation` · `population genetics`
+`VCF` · `haplotypes` · `GWAS` · `QTL` · `functional annotation` · `network analysis`
 
-A robust tool for the generation, visualization, and annotation of genetic haplotypes from VCF data, independent of species.
+A robust tool for the generation, visualization, and annotation of genetic haplotypes from VCF data.
 
 </div>
 
 ---
 
-## Try it online
+## Online
 
 Haplofun is available as web server application at **[datascience-fzb.shinyapps.io/haplofun](https://datascience-fzb.shinyapps.io/haplofun/)**.
 
 > [!NOTE]
-> The public server enforces a 500 Kb VCF file size limit (< 1,000 variants and < 1,000 samples recommended). Please note that the initial page load may take a while, as the server spins up and loads all required packages and dependencies. 
+> The public server enforces a 500 kB VCF file size limit (< 1,000 variants and < 1,000 samples recommended). Please note that the initial page load may take a while, as the server spins up and loads all required packages and dependencies. 
 ---
 
-## Contents
+## Content
 
-- [Try it online](#try-it-online)
 - [1. Data input & compliance](#1-data-input--compliance)
   - [1.1 Data security and compliance](#11-data-security-and-compliance)
   - [1.2 Data upload](#12-data-upload)
@@ -59,25 +58,23 @@ This section covers the data protection declaration, data upload, and the use of
 
 **Data protection declaration.** The Haplofun web server operates on a non-persistence principle. Uploaded VCF files are not permanently stored on the server; processing occurs exclusively in working memory (RAM) during your active session.
 
-Regardless of data type, users must declare the nature of their data, and retain full responsibility for adhering to all relevant data protection laws concerning the uploaded material:
+> [!IMPORTANT]
+> Regardless of data type, users must declare the nature of their data, and retain full responsibility for adhering to all relevant data protection laws concerning the uploaded material.
 
 | Data type | Requirement |
 |---|---|
 | Public / non-human data | No login required |
 | Private / sensitive human data | Registration and login required |
 
-> [!IMPORTANT]
-> No uploaded file is ever written to disk on the server. Everything is processed in memory for the lifetime of your session only.
-
 ### 1.2 Data upload
 
-Upon confirming the data protection declaration, the Haplofun workflow begins. The server accepts genomic variation data conforming to the **Variant Call Format (VCF)**, independent of species. The file must be accompanied by a Tabix index file. Metadata files can additionally be supplied for optional functional annotation.
+Upon confirming the data protection declaration, the Haplofun workflow begins. The server accepts phased diploid or monoploid genomic variation data conforming to the **Variant Call Format (VCF)**. The file must be accompanied by a Tabix index file. Metadata files can additionally be supplied for optional annotation.
 
 **Required files**
 
 | File | Description |
 |---|---|
-| VCF file (`.vcf` / `.vcf.gz`) | Main data file. Must include sample genotype information (`GT` field). File size limit is **500 Kb** on the public server, with < 1,000 variants and < 1,000 samples recommended. Larger files require pre-filtering with `bcftools`. |
+| VCF file (`.vcf` / `.vcf.gz`) | Main data file. Must include sample genotype information (`GT` field). File size limit is **500 kB** on the public server, with < 1,000 variants and < 1,000 samples recommended. Larger files require pre-filtering with `bcftools`. |
 
 **Optional files**
 
@@ -90,10 +87,10 @@ Upon confirming the data protection declaration, the Haplofun workflow begins. T
 
 ### 1.3 Accessing pre-stored data sets
 
-Besides your own data, you can use bundled public datasets for functional annotation. The current, limited selection will be expanded over time.
+Besides your own data, you can use bundled public datasets for functional annotation.
 
 > [!TIP]
-> Want to try Haplofun without preparing your own files? Load the bundled **1000G (IL23R locus, hg38)** VCF together with the **GWAS catalog** and **eQTL** annotations to see the full workflow in seconds.
+> Want to try Haplofun without preparing your own files? Load the bundled **1000G (IL23R locus, hg38)** VCF together with the **GWAS catalog**, **eQTL**, and **cCRE** annotations to test the full workflow.
 
 **Pre-stored VCF files**
 
