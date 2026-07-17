@@ -236,9 +236,9 @@ This project is licensed under the [MIT License](https://choosealicense.com/lice
 
 ## Installation
 
-Prefer running the app locally? Haplofun can be downloaded and run entirely on your own machine, which removes the file-size limits imposed on the public server.
+Prefer running the app locally? Haplofun can be downloaded and run entirely on your own machine, which allows custom changes eg. for the file-size limits imposed on the public server.
 
-**Prerequisites:** R **4.5.1** (the version this app is locked against) and [renv](https://rstudio.github.io/renv/) (installed automatically on first run if missing).
+**Prerequisites:** R **4.5.1** (the version this app is locked against) and [renv](https://rstudio.github.io/renv/).
 
 ```bash
 git clone https://github.com/TimHasenbein/Haplofun.git
