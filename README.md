@@ -23,7 +23,9 @@ A robust tool for the generation, visualization, and annotation of genetic haplo
 Haplofun is available as web server application at **[datascience-fzb.shinyapps.io/haplofun](https://datascience-fzb.shinyapps.io/haplofun/)**.
 
 > [!NOTE]
-> The public server enforces a 500 kB VCF file size limit (< 1,000 variants and < 1,000 samples recommended). Please note that the initial page load may take a while, as the server spins up and loads all required packages and dependencies. 
+> The public server enforces a 500 kB VCF file size limit (< 1,000 variants and < 1,000 samples recommended).
+> Initial page load may take a while, as the server spins up and loads all required packages and dependencies.
+> Note on usage with diploid genomes: Haplofun only works for phased biallelic genotypes, i.e., the VCF files may only contain genotypes "0|0", "0|1" and "1|1".
 ---
 
 ## Content
