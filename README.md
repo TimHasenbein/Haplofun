@@ -70,7 +70,7 @@ This section covers the data protection declaration, data upload, and the use of
 
 ### 1.2 Data upload
 
-Upon confirming the data protection declaration, the Haplofun workflow begins. The server accepts **phased diploid** or **monoploid** genomic variation data conforming to the **Variant Call Format (VCF)**. The file must be accompanied by a Tabix index file. Metadata files can additionally be supplied for optional annotation.
+Upon confirming the data protection declaration, the Haplofun workflow begins. The server accepts **phased diploid** or **monoploid** genomic variation data conforming to the **Variant Call Format (VCF)**. Metadata files can additionally be supplied for optional annotation.
 
 **Required files**
 
