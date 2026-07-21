@@ -69,7 +69,7 @@ This section covers the data protection declaration, data upload, and the use of
 | Private / sensitive human data | Registration and login required |
 
 > [!NOTE]
->sessions expire after 15 minutes of inactivity
+>The sessions expire after 15 minutes of inactivity.
 
 ### 1.2 Data upload
 
