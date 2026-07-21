@@ -167,7 +167,7 @@ Six interactive plots derived from the VCF input, for structural analysis of the
 
 Functional annotation of haplogroups was designed for GWAS alleles, QTLs, and genomic elements, but any genomic element can be annotated as long as the input file follows the structure described in [1.2 Data upload](#12-data-upload).
 
-**Metadata annotation.** Enriches the visual analysis by colorizing the haplotype frequency bar plot and genetic network plot according to sample traits, such as geographic location or phenotype. The metadata file must follow the format described in [1.2 Data upload](#12-data-upload).
+**Metadata annotation:** Enriches the visual analysis by colorizing the haplotype frequency bar plot and genetic network plot according to sample traits, such as geographic location or phenotype. The metadata file must follow the format described in [1.2 Data upload](#12-data-upload).
 
 ### 3.1 GWAS annotation of haplotypes
 
