@@ -92,19 +92,19 @@ Upon confirming the data protection declaration, the Haplofun workflow begins. T
 Besides your own data, you can use bundled public datasets for functional annotation.
 
 > [!TIP]
-> Want to try Haplofun without preparing your own files? Load the bundled **1000G (IL23R locus, hg38)** VCF together with the **GWAS catalog**, **eQTL**, and **cCRE** annotation to test the full workflow.
+> Want to try Haplofun without preparing your own files? Load the bundled **1000G (*IL23R* locus, hg38)** VCF together with the **GWAS catalog**, **eQTL**, and **cCRE** annotation to test the full workflow.
 
 **Pre-stored VCF files**
 
-- **1000G data (IL23R locus, hg38)**: 1000 Genomes project data, filtered for variants of the *IL23R* gene locus (`chr1:66,952,344-67,374,700`).
-- **H. influenzae (ftsI locus)**: Example VCF data for the bacterial *ftsI* gene locus (`1,688,312-1,690,102`).
+- **1000G data (*IL23R* locus, hg38)**: 1000 Genomes project data, filtered for variants of the *IL23R* gene locus (`chr1:66,952,344-67,374,700`).
+- ***H. influenzae* (*ftsI* locus)**: Example VCF data for the bacterial *ftsI* gene locus (`1,688,312-1,690,102`).
 
 **Pre-stored annotation files**
 
 - **GWAS catalog (hg38)**: Pre-processed human GWAS data from the GWAS catalog, used for risk allele mapping.
 - **eQTL data (hg38)**: Pre-processed human expression QTL data (GTEx v10 SuSiE eQTL, hg38, PIP > 0.5).
 - **cCREs annotation (ENCODE)**: Candidate cis-regulatory elements from the UCSC Genome Browser (ENCODE).
-- **H. influenzae (ftsI locus)**: Microbial GWAS data for antimicrobial resistance (Diricks, M., Petersen, S., Bartels, L. et al., *Genome Med* 2024).
+- ***H. influenzae* (*ftsI* locus)**: Microbial GWAS data for antimicrobial resistance (Diricks, M., Petersen, S., Bartels, L. et al., *Genome Med* 2024).
 
 ### 1.4 Pre-analysis data inspection
 
