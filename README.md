@@ -68,6 +68,9 @@ This section covers the data protection declaration, data upload, and the use of
 | Public / non-human data | No login required |
 | Private / sensitive human data | Registration and login required |
 
+> [!NOTE]
+>sessions expire after 15 minutes of inactivity
+
 ### 1.2 Data upload
 
 Upon confirming the data protection declaration, the Haplofun workflow begins. The server accepts **phased diploid** or **monoploid** genomic variation data conforming to the **Variant Call Format (VCF)**. Metadata files can additionally be supplied for optional annotation.
