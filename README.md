@@ -147,7 +147,7 @@ A continuously updated overview reflecting the current filtered data state:
 
 ### 2.4 Advanced filtering options
 
-- **Linkage disequilibrium (LD) pruning**: Subsets the data based on LD, calculated across the variants in your dataset. Multiallelic variants cannot be processed reliably. For variant pairs above the r² threshold, the first variant of the pair is retained.
+- **Linkage disequilibrium (LD) pruning**: Subsets the data based on LD, calculated across the variants in your dataset. Multiallelic variants cannot be processed reliably due to limitations of the pegas package. For variant pairs above the r² threshold, the first variant of the pair is retained.
 - **Random SNP sub-sampling**: Randomly selects a specified number of variants from the current filtered dataset, used to assess the robustness and variability of the inferred haplogrouptype network. Comparing networks from multiple random SNP subsets shows how stable the genetic relationships are for the predefined variant set.
 
 ### 2.5 Haplotype visualizations
