@@ -246,11 +246,10 @@ Prefer running the app locally? Haplofun can be downloaded and run entirely on y
 # R
 install.packages("renv")
 ```
-
+Clone the github repository:
 ```bash
 # bash 
 git clone https://github.com/TimHasenbein/Haplofun.git
-cd Haplofun
 ```
 
 Restore the exact package environment recorded in `renv.lock`:
