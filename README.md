@@ -242,7 +242,13 @@ Prefer running the app locally? Haplofun can be downloaded and run entirely on y
 
 **Prerequisites:** R **4.5.1** (the version this app is locked against) and [renv](https://rstudio.github.io/renv/).
 
+```r
+# R
+install.packages("renv")
+```
+
 ```bash
+# bash 
 git clone https://github.com/TimHasenbein/Haplofun.git
 cd Haplofun
 ```
@@ -250,12 +256,10 @@ cd Haplofun
 Restore the exact package environment recorded in `renv.lock`:
 
 ```r
-install.packages("renv")
+# R
+setwd("./Haplofun/00_app")
 renv::restore()
 ```
-
-> [!NOTE]
-> The lockfile includes several Bioconductor packages, so the first `renv::restore()` can take a while.
 
 Then launch the app:
 
