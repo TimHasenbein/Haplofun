@@ -201,7 +201,7 @@ Feature mapping of haplogroups, to identify whether a variant overlaps a genomic
 
 - **Variants overlapping annotation**: All data variants of the haplogroups that overlap a genomic feature: genomic position, name (ID), type of regulatory element, and its position.
 - **Haplotype allele table (annotation)**: Alleles of the variant overlapping a genomic feature.
-- **Annotation mapping**: Heatmap of the allele of a variant overlapping a genomic feature; color denotes the base.
+- **Annotation mapping**: Heatmap of the allele of a variant overlapping a genomic feature; The color denotes the bases (A: green; C: blue; G: yellow; T: red).
 - **Count of VCF variants overlapping annotation features**: Quantification of variants overlapping different genomic features; color represents the distinct features.
 
 All tables and plots can be dynamically filtered for a specific feature of interest.
