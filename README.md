@@ -169,12 +169,6 @@ Functional annotation of haplogroups was designed for GWAS alleles, QTLs, and ge
 
 **Metadata annotation.** Enriches the visual analysis by colorizing the haplotype frequency bar plot and genetic network plot according to sample traits, such as geographic location or phenotype. The metadata file must follow the format described in [1.2 Data upload](#12-data-upload).
 
-<div align="center">
-<img src="https://raw.githubusercontent.com/TimHasenbein/PegasShiny/main/data/meta_2.png" alt="Metadata coloring of the frequency bar plot and haplotype network" width="720"/>
-
-*Figure 1: The frequency bar plot and haplotype network, colored by sample metadata.*
-</div>
-
 ### 3.1 GWAS annotation of haplotypes
 
 Insights into risk or trait allele mapping across inferred haplotypes, for identifying trait-relevant haplogroups, across four interactive panels:
