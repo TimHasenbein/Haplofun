@@ -156,7 +156,7 @@ Six interactive plots derived from the VCF input, for structural analysis of the
 |---|---|
 | **Frequencies** (bar plot) | Frequencies of samples per haplogroup. |
 | **Distance matrix** (heatmap) | Hamming distance matrix for the selected haplogroups, with optional clustering (`ward.D`, `single`, `complete`, `average`, `mcquitty`, `median`, `centroid`). |
-| **Network** | Network plot for the selected haplogroups. Four model methods: Haplonet, Minimum Spanning Network (MSN), Randomized Minimum Spanning Tree (RMST), and Minimum Spanning Tree (MST), plus fast-plotting options for larger datasets. Includes allele/haplogroup coloring, frequency-scaled nodes, adjustable plot size/scale/labels/color, an edge-count threshold, and edge weight display as lines, dots, or numbers. |
+| **Network** | Network plot for the selected haplogroups as computed and visualized via the pegas R package. Four model methods: Haplonet, Minimum Spanning Network (MSN), Randomized Minimum Spanning Tree (RMST), and Minimum Spanning Tree (MST), plus fast-plotting options for larger datasets. Includes allele/haplogroup coloring, frequency-scaled nodes, adjustable plot size/scale/labels/color, an edge-count threshold, and edge weight display as lines, dots, or numbers. |
 | **PCA** | Principal component analysis (PC1 vs. PC2) for the selected haplogroups; dot size scaled to haplogroup sample frequency. |
 | **Dendrogram** | Hierarchical clustering of the selected haplogroup, with the same agglomeration methods as the distance matrix. |
 | **Allele heatmap** | Visual alignment of the alleles per haplogroup, depicted by color. |
