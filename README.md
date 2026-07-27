@@ -217,7 +217,6 @@ If you use Haplofun in your research, please cite:
 
 For technical support, bugs, or inquiries regarding data submission and collaboration, please contact the development team:
 
-| | |
 |---|---|
 | **Contact** | Prof. Dr. Inken Wohlers |
 | **Affiliation** | Biomolecular Data Science in Pneumology, Research Center Borstel, Germany |
@@ -263,7 +262,7 @@ shiny::runApp()
 ```
 
 If you want to work with larger files, the app can be adjusted by changing the following parameters in the appServer.R script:
-|---|---|
+
 |Constant |	Current value	Controls |
 |MAX_UPLOAD_SIZE_BYTES |	1.5 GB |	Hard cap on file upload size|
 |FILESIZE_THRESHOLD_BYTES |	500 KB	| Soft "this file is large" warning|
