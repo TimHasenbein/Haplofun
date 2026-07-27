@@ -272,6 +272,6 @@ If you want to work with larger files, the app can be adjusted by changing the f
 |COMPUTE_TIMEOUT_SECONDS |	20s |	Default timeout used by different computations (haplotype building, distance matrix, haplotype table, PCA, dendrogram, etc.)|
 |LD_SCAN_TIMEOUT_SECONDS |	60s |	LD r² matrix calculation specifically|
 |NETWORK_PLOT_TIMEOUT_SECONDS |	10s |	The interactive network plot render|
-|MAX_HAPLOTYPES_FOR_NETWORK |	50 |	Network plot won't render above this many haplogroups|
+|MAX_HAPLOTYPES_FOR_NETWORK |	50 |	Maximum number of haplogroups |
 |MAX_HEATMAP_CELLS |	1,000,000 |	Allele heatmap size gate (haplotypes × variants)|
 |PERFORMANCE_WARNING_CELLS |	350,000 |	Soft "performance warning" banner threshold|
