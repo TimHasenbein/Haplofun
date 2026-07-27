@@ -133,7 +133,7 @@ A continuously updated overview reflecting the current filtered data state:
 **Filtering options** (the data summary updates dynamically after any filter is applied):
 
 - **Genomic location**: Restrict the analysis to a specific chromosomal region defined by start and end coordinates.
-- **Minor allele frequency (MAF)**: Exclude rare variants by setting a minimum MAF threshold.
+- **Minor allele frequency (MAF)**: Exclude rare variants by setting a minimum MAF threshold. The MAF is calculated via vcfR::maf() with default parameters (frequency of the second most common allele); for multiallelic sites this may differ from the frequency of the rarest allele, see the vcfR documentation for details.
 
 ### 2.2 Haplogroup frequency table
 
