@@ -85,8 +85,8 @@ Upon confirming the data protection declaration, the Haplofun workflow begins. T
 | File | Description |
 |---|---|
 | Sample information (`.tsv`) | Two-column, tab-delimited file of sample attributes (e.g. population, phenotype). Column 1 holds sample IDs, column 2 holds the metadata for that sample. Used to color the frequency bar and network plots. |
-| GWAS information (`.csv`) | Genome-Wide Association Study file for mapping trait-associated SNPs to haplogroups. Comma-separated file with the format: `chromosome, start, end, name, score, strand`, `trait, risk allele, pval, effect_size`. "Start" and "end" must equal the same position as in your VCF`s POS column.'|
-| QTL information (`.csv`) | Quantitative Trait Loci file for mapping QTLs to haplogroups. Comma-separated file with the format: `chromosome, start, end, name (REF/effect allele), score, strand`, `tissue, pip, effect size (allelic fold change), target gene`. "Start" and "end" must equal the same position as in your VCF`s POS column.'|
+| GWAS information (`.csv`) | Genome-Wide Association Study file for mapping trait-associated SNPs to haplogroups. Comma-separated file with the format: `chromosome, start, end, name, score, strand`, `trait, risk allele, pval, effect_size`. `Start` and `end` must equal the same position as in your VCF`s POS column.'|
+| QTL information (`.csv`) | Quantitative Trait Loci file for mapping QTLs to haplogroups. Comma-separated file with the format: `chromosome, start, end, name (REF/effect allele), score, strand`, `tissue, pip, effect size (allelic fold change), target gene`. `Start` and `end` must equal the same position as in your VCF`s POS column.'|
 | Annotation information (`.csv`) | Annotation file for mapping genomic features to haplogroups: `chromosome, start, end, name, score, strand`. |
 
 ### 1.3 Accessing pre-stored data sets
