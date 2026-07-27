@@ -23,7 +23,7 @@ A robust tool for the generation, visualization, and annotation of genetic haplo
 Haplofun is available as web server application at **[datascience-fzb.shinyapps.io/haplofun](https://datascience-fzb.shinyapps.io/haplofun/)**.
 
 > [!NOTE]
-> The public server enforces a 500 kb VCF file size limit (< 1,000 variants and < 1,000 samples recommended).
+> The public server enforces a 500 kb VCF file size limit (< 1,000 variants and < 1,000 samples recommended). For larger files please run the app locally as described in [Installation](#installation).
 > Furthermore, the initial page load may take a while, as the server spins up and loads all required packages and dependencies.
 ---
 
@@ -261,3 +261,17 @@ Then launch the app:
 ```r
 shiny::runApp()
 ```
+
+If you want to work with larger files, the app can be adjusted by changing the following parameters in the appServer.R script:
+|---|---|
+|Constant |	Current value	Controls |
+|MAX_UPLOAD_SIZE_BYTES |	1.5 GB |	Hard cap on file upload size|
+|FILESIZE_THRESHOLD_BYTES |	500 KB	| Soft "this file is large" warning|
+|MAX_VARIANTS	| 1000 |	Hard cap on variants before rejecting the VCF|
+|MAX_SAMPLES | 2550 |	Hard cap on samples before rejecting the VCF|
+|COMPUTE_TIMEOUT_SECONDS |	20s |	Default timeout used by different computations (haplotype building, distance matrix, haplotype table, PCA, dendrogram, etc.)|
+|LD_SCAN_TIMEOUT_SECONDS |	60s |	LD r² matrix calculation specifically|
+|NETWORK_PLOT_TIMEOUT_SECONDS |	10s |	The interactive network plot render|
+|MAX_HAPLOTYPES_FOR_NETWORK |	50 |	Network plot won't render above this many haplogroups|
+|MAX_HEATMAP_CELLS |	1,000,000 |	Allele heatmap size gate (haplotypes × variants)|
+|PERFORMANCE_WARNING_CELLS |	350,000 |	Soft "performance warning" banner threshold|
