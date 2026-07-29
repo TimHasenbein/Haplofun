@@ -64,8 +64,8 @@ This section covers the data protection declaration, data upload, and the use of
 
 | Data type | Requirement |
 |---|---|
-| Public / non-human data | No login required |
-| Private / sensitive human data | Registration and login required |
+| Public data | No login required |
+| Private / sensitive data | Registration and login required |
 
 > [!NOTE]
 >The sessions expire after 15 minutes of inactivity.
