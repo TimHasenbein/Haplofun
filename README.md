@@ -113,7 +113,7 @@ Besides your own data, you can use bundled public datasets for functional annota
 An initial overview of the uploaded data, before running the haplotype analysis:
 
 - **Data summary**: Genomic range with data entries, and the number of initial samples, variants, haplotypes, and distinct haplogroups.
-- **Integrative Genomics Viewer (IGV)**: In-browser VCF visualization. The reference annotation is selected in the *Select Genome Build for IGV* tab.
+- **Integrative Genomics Viewer (IGV)**: In-browser VCF visualization. The reference annotation is selected in the *Select genome build for IGV* tab.
 - **VCF header table**: Position, variant ID, alleles, quality, and filters.
 - **VCF data lines**: The variant records themselves.
 
