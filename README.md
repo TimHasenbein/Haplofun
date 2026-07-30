@@ -78,7 +78,7 @@ Upon confirming the data protection declaration, the Haplofun workflow begins. T
 
 | File | Description |
 |---|---|
-| VCF file (`.vcf` / `.vcf.gz`) | Main data file. Must include sample genotype information (`GT` field). File size limit is **500 kb** on the public server, with < 1,000 variants and < 1,000 samples recommended. Larger files require pre-filtering with `bcftools`. Multiallelic variants must be represented as comma-separated values within a single line rather than split across multiple bi-allelic records. Missing genotypes are treated as missing values and handled according to the respective conventions of the vcfR and pegas packages used for VCF processing and population-genetic analyses; users are referred to the vcfR and pegas documentation for further detail.|
+| VCF file (`.vcf` / `.vcf.gz`) | Main data file. Must include sample **phased** genotype information (`GT` field). File size limit is **500 kb** on the public server, with < 1,000 variants and < 1,000 samples recommended. Larger files require pre-filtering with `bcftools`. Multiallelic variants must be represented as comma-separated values within a single line rather than split across multiple bi-allelic records. Missing genotypes are treated as missing values and handled according to the respective conventions of the vcfR and pegas packages used for VCF processing and population-genetic analyses; users are referred to the vcfR and pegas documentation for further detail.|
 
 **Optional files**
 
